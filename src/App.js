@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage.js';
 import RegisterPage from "./pages/RegisterPage.js";
 
 axios.defaults.baseURL='http://localhost:4000'
+axios.defaults.withCredentials=true;
 function App() {
   return (
     <BrowserRouter>
