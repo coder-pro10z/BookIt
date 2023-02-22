@@ -3,9 +3,7 @@ import { useState } from 'react'
 import { Link,Navigate } from 'react-router-dom'
 import axios from 'axios'
 // import Navigate from 'react-router-dom'
-import { BrowserRouter,Route,Routes} from 'react-router-dom'
-import {  Redirect, useLocation } from "react-router-dom";
-import IndexPage from './IndexPage'
+
 const LoginPage = () => {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
@@ -23,12 +21,7 @@ async function handleLoginSubmit(ev){
 
 if(redirect){
   return  <Navigate to={'/'} />
-}  //   <BrowserRouter>
-//   <Routes>
-// <Route index element={<IndexPage/>}/>
-//   </Routes>
-//   {/* <Redirect to={'/'}/> */}
-//   </BrowserRouter>
+} 
 
 
   return (
